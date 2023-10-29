@@ -1,0 +1,31 @@
+html,body{
+    height: 100%;
+}
+ /*aline-items를 사용하여 교차축 정렬을 할 떄 html과 body의 height의 값을 100%로 지정해주는 이유? 
+  = html에서 인지하는 길이와 실제 브라우저의 길이가 다르다, 따라서 html의 height를 늘려 브라우저상의 여백을 줄여주는 것이다.
+  html과 body태그를 함께 작성하는 이유는 %가 부모요소에 따라 상대적으로 크기가 정해지기 떄문이다. 
+  즉 div태그는 그 부모 태그인 body태그와 최상위 부모인 html 태그의 높이에 대해 상대적으로 100%의 값을 가진다.*/
+body{
+    display: flex; /* display 속성에는 biock, inline 밖 flex가 있음.
+                       /* -- 공간에 맞추기로 부모태그에 사용해야함*/ 
+                       /* display이의 기본 설정 block을 flex로 바꾸어 마진을 없앰. 
+                       부모에 적용시켜야하며 이로 인해 자식요소를 유연하게 배치할 수 있음*/
+    /* justify-content: end; /* justify =- content/between를 사용하여 가운데 정렬을 하게되면 반응형이기 떄문에  */
+                                /* 디스플레이의 크기에 따라 크기가 자동 조정된다.*/ 
+    /* align-items: stretch; */
+    justify-content: center;
+    align-items: center;
+}
+div{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#second{
+
+    background-color: blanchedalmond;
+}

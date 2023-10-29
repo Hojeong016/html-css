@@ -1,0 +1,61 @@
+html,body{
+    height: 1000vh; /*vh:vertical height의 약자로 페이지의 길이를 정의할 떄 사용*/
+}
+
+body{
+    display: block;
+    justify-content: start;
+}
+
+
+div{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    position: static;
+}
+
+#second{
+   background-color: bisque;
+   /* position: fixed; */
+}
+
+#b-rel{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+}
+
+#ob-rel{
+    width: 200px;
+    height: 200px;
+    background-color:antiquewhite;
+    position: relative; /*형제관계일 때 : 자기 자신*/
+    top:20px;
+    opacity:0.5;
+}
+
+#g{
+    background-color: pink;
+    width: 200px;
+    height:200px;
+    position:relative;
+}
+#p{
+    background-color: beige;
+    width: 150px;
+    height:150px;
+    position: absolute;
+    top: 20px;/*부모태그인 g를 기준으로 top에서 20px이동함*/
+    opacity: 0.5;
+}
+#c{
+    background-color: gold;
+    width: 100px;
+    height:100px;
+    position: absolute;
+    top:20px;/*부모태그 p를 기준으로 양수= 아래로 top 20px를 음수일 땐 위로이동함*/
+    opacity: 0.5;
+}
+
+/*왜 계속 여백을 기준으로 position이 적용되는 걸까...???*/

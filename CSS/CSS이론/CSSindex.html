@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/style.css" /> <!--첫 실수 코드 닫기를 계속/../ 로 상위 폴더 지정 -->
+</head>
+<!-- <body>
+    <style>
+    @media(max-width: 1280px;){
+        body {
+            background-color: pink;
+        }
+    }
+ </style> -->
+    <!-- <style> 
+        p {
+            color: brown;
+        }
+    </style> -->
+    <h1 class="title1">CSS가 뭐지?</h1>
+    <P>CSS(Cascading style sheet)는 시각적으로 꾸미는 언어입니다. HTML에 꾸미기 기능을 넣지 않았을까요?<br /> 
+        가독성과 효율성을 위해서 입니다. 그럼 간단하게 CSS 코드를 적용시키는 방법을 
+        알아볼까요?</P>
+    <p>[style]= CSS코드<br />
+        [p]= 선택자<br />
+        [{ }]= 적용범위 / 중괄호 안의 모든 코드는 선택자 태그에 적용된다.<br />
+        [;]=마침 기호/세미콜론 '명령이 끝났다'<br />
+        <!-- 어떤 색이 있는지 검색하기 좋은 곳 = 'color property value'
+        [MDN]= 모질라 재단이 제공하는 웹 기술 문서 모음 사이트 -->
+    </p>
+    <h1 class="title2">선택자 태그</h1><br />
+    <ul>
+        <li><span class="h2">전체 선택자</span>
+            <ul>
+                <li> head를 포함한 HTML 문서 내의 모든 요소를 선택</li>
+                <li> 태그 = * </li>
+            </ul>
+        </li>
+        <li><span class="h2">선택자 태그</span>
+            <ul>
+                <li>지정된 태그를 가지는 요소를 선택합니다. </li>
+                <li>태그 = 태그명</li>
+            </ul> 
+        </li>
+        <li>아이디 선택자
+            <ui>
+                <li>아이디를 지정하여 일치하는 태그를 선택합니다. 아이디 중복 불가</li>
+                <li>태그 = 아이디</li>
+            </ui>
+        </li>
+        <li>클래스 선택자
+            <ul>
+                <li>클래스명과 일치하는 요소를 선택합니다. 하나 이상 지정할 수 있습니다.</li>
+                <li>태그 = . </li>
+            </ul>
+        </li>
+        <li>복합 선택자
+            <ui>
+                <li>조상 하위에 있는 자손을 선택합니다. 조상과 자손은 띄어쓰기를 통해 구분합니다.</li>
+                <li></li>
+            </ui>
+        </li>
+    </ul>
+     <!-- px=고정적 단위 / % = 가변적인 단위 ---- 공부 더 하기  -->
+    <h1 class="title2">css배치 속성과 반응형 웹</h1><br />
+    <h2>dispaly:inline, block</h2>
+    <span>나무</span><spsn>꽃</spsn><spsn>나비</spsn><br />
+       <!--h1태그[블록레벨요소:가로줄 전체를 차지하는 요소/요소마다 줄바꿈] 
+        span태그[인라인요소레벨=요소 크기의 너비만큼 차지하는 요소/ 요소의 크기에 따라 줄바꿈 가능] 
+        위 요소에 굵기, 색 등등 지정 가능한 태그 = border
+        요소 속성을 변경가능합니다. 
+        속성 : dispaly 값 : inline, block ++ flex
+        -->
+    <h2>박스 모델</h2>
+
+    <h2>밑줄치기</h2>
+    <h3 class="border">감정의 종류</h3><!--border 속성을 사용하여 밑줄을 치기-->
+    <span class="padding">기쁨</span><!--pading태그 사용하여 간격 조정하기 -->>
+    <span class="padding">슬픔</span> 
+    <span class="padding">즐거움</span>
+
+    <h2>배경색 바꾸기</h2>
+</body>
+</html>

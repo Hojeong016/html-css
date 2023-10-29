@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    height: 2000px;
+}
+section{
+    background: url(https://www.bebedepino.com/web/upload/img/23W_bottom_img_1.jpg) fixed;
+    height: 500px;
+}
+/*url을html에 적용을 하면 전체가 뜨고 여기에 적용하며 ,, 이렇게?? ㅇ햐 이것도 여러가지 해보기*/
+/* h1{
+    font-family: ;
+} */
+
+.main{
+    display: block;
+    position: absolute;
+    top: 200px;
+    left: 150px;
+    width: 250px;
+    /* height: 10px; 자간을 줄여주는 코드는 무엇일까? */
+    font-size: 60px;
+    color: white;
+    animation-name: slide;
+    animation-duration: 3s;
+}
+
+@keyframes slide
+{
+    0%{
+        left: -100px;
+        opacity: 0;
+    }
+    100%{
+        left: 150px;
+        opacity: 1;
+    }
+/*처음에 from, to를 사용하여 애니메이션 적용,, 먹지 않았음... 0과 100으로 설정하니 먹었음*/
+}

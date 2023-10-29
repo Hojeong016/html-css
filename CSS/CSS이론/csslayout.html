@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/csslayout.css">
+</head>
+<body>
+    <div>1</div>
+    <div id="second">2</div>
+    <div>3</div>
+</body>
+</html>
+
+<!--px 썼는지 확인, 파위 상위폴더 .../했는지 확인
+'플렉스'= 유연한 이라는 의미를 지님 플렉스 박스 : 블랙라벨요소= 자동 줄바꿈
+인라인 = 여백을 없애는 데 사용한다면 플렉스 박스는 1. 공간에 맞추기, 주축 정렬하기, 교차축 정렬하기 사용 
+즉 유연하게레이아웃을 변경할 수 있다는 장점이 있음-->
+<!--플렉스 박스의 1원칙 : 부모만이 플렉스할 수 있다.따라서 선택자는 꼭 부모 태그로 설정하기!!-->
+
+<!--alingn-items : stretch 속성값이 실행이 되지 않았던 이유 
+   div 속성 값에 height 값을 지정해 두어서... 코드는 위에서 아래로 작성되기 때문에 최종 반영은 아래코드로 된다. 
+   그렇기에 위에서 stretch 값으로 늘려도 아래에서 height 값을 지정해 두었기 때문에 최종실행은 height값으로 되었던 것-->

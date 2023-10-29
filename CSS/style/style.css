@@ -1,0 +1,27 @@
+
+
+.title1{
+    font-size: 100px ; /*글자 크기를 100px로 지정*/
+    text-align: center; /*h1 글자 정렬을 가운데로 지정*/
+    border: 3px solid pink;
+}
+
+.title2 {
+    /* display: block; */
+    display: inline;  /*h1의 dispaly속성을 block에서 inline으로 변경 */
+    border: 3px dotted pink;
+}
+
+p {
+    text-align: center; /*p 글자 정렬을 가운데로 지정*/
+}
+
+.border{
+    padding: top 10px bottom 1px right 10px left 10px;
+    display: inline;
+    border-bottom: 3px solid yellow;
+}
+
+.padding{
+    padding: top 10px bottom 5px  right 5px left 5px; /*패딩값을 지정*/
+}
