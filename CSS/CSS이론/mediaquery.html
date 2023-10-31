@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 10px solid green;
+            font-size: 60px;}
+
+        @media(min-width:800px) {
+                 div{   
+                    display: none;
+                    }
+                img{
+                    width: 100px; height: 100px;
+                }
+            }
+    </style>
+</head>
+<body>
+    <div>
+        mediaquery
+    </div>
+    <img src="../CSS이론/이미지/해리포터 곰돌이 3.png" 
+        width="400px"
+        height="400px">
+</body>
+</html>
+
+<!-- 개발자 모드에서 화면의 크기를 확인할 수 있다. -->
+
+<!-- @media(min-width:800px): min- 최소의 의미를 지님 
+즉 screen > 800 800보다 너비가 클떄와 최소한의 넓이가 800을 의미가 같다. -->
+<!-- 최대값:max -->
+
+<!-- 그럼 이미지 크기?? 이미지가 화면에 맞게 자동으로 크기가 변화하게 하는것 
+img {
+    max-width: 100%; /* 이미지의 최대사이즈 */
+    width /***/: auto; /* only IE8 */
+    height: auto;
+    vertical-align: bottom;
+} -->

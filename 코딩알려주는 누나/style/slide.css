@@ -8,7 +8,7 @@ body{
     height: 50px;
     background-color: white;
     opacity: 0.5;
-}
+}  /*반응형을 따로 설정하지 않았는데 자동으로 위치가 조정이 된다...*/
 #h1{
     display: inline;
     text-align: center;
@@ -17,7 +17,20 @@ body{
 }
 section{
     background: url(https://www.bebedepino.com/web/upload/img/23W_bottom_img_1.jpg) fixed;
+    /* background-position: center; */
+    /* background-size: cover; */
+    /* background-repeat:repeat; 배경이미지를 반복하지 않습니다. */
+    /* - 위 코드를 넣어주면,,, 사진의 크기가 창에 맞춰지면서,, 찬의 크기에따라 이미지의 크기도 변한다.. 미디어 쿼리로 
+    백그라운드의 이미지를 움직이는 것이 아닌가??,, 
+    repeat가 배경이미지의 반복을 의미하여 no repeat를 사용하여 반복하지 않아 창의 크기에 맞게 채워진다 cover와 함꼐 사용하여 
+    미디어 쿼리 를 실행시켜도 자동으로 된다고 생ㄱ가했는데 ,, 센터만 남겨도 이미지가 창의 크기에 맞추어 변하는 경우는 대체 왜그럴까? */
     height: 500px;
+    
+/* background-size 속성	설명
+contain	이미지의 가로세로 비율을 유지하면서, 이미지가 잘리지 않을 때까지만 채운다.
+cover	이미지의 가로세로 비율을 유지하면서, 이미지가 잘리더라도 주어진 크기를 꽉 채운다.
+사이즈 직접 입력
+(100%, 200px, 50em 등)	비율에 무관하게 입력한 값에 맞춰 사이즈를 조절     */
 }
 /*url을html에 적용을 하면 전체가 뜨고 여기에 적용하며 ,, 이렇게?? ㅇ햐 이것도 여러가지 해보기*/
 /* h1{
