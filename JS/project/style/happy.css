@@ -1,17 +1,19 @@
-html.body{
-    margin: 0;
-    width: 100;
+body{
+    margin:0;
+    height: 2000px;
 }
 .head{
     display: flex;
     justify-content:space-between;
     align-items: flex-start;
+    background: fixed;
 
 }
 #a{
     /* display: inline; */
     padding-left: 20px;
     padding-right: 100px;
+    padding-top: 10px;
 
 }
 
@@ -21,9 +23,13 @@ html.body{
     justify-content: center;
     align-items: flex-start; */
     font-size: 20px;
+    /* margin: 0; */
+    padding-top: 10px;
+}
+#name{
     margin: 0;
 }
-
+/* 처음 b태그의 마진을 0으로 두었을때 계속 마진이 남아있었는데 따로 h1 태그의 아이디를 지정하여 마진을 설정해주니 마진이 사라짐  */
 #c{
     /* display: inline; */
     /* display:inline-flex;
@@ -31,10 +37,61 @@ html.body{
     align-items: flex-start; */
     padding-left: 100px;
     padding-right: 20px;
-    padding-top: -20px;
+    padding-top: 10px;
 
 } 
+input.profile-button {
+    background: url("../style/이미지/001-removebg-preview.png") no-repeat;
+    background-size:contain;
+    border: 0;
+    width: 30px;
+    height: 30px;
+  }
+input.search-button {
+    background: url("../style/이미지/002-removebg-preview.png") no-repeat;
+    background-size:contain;
+    border: 0;
+    width: 30px;
+    height: 30px;
+  }
+input.basket-button {
+    background: url("../style/이미지/003-removebg-preview.png") no-repeat;
+    background-size:contain;
+    border: 0;
+    width: 30px;
+    height: 30px;
+  }
 
-.fro{
-    
+/* #profile{
+    background-color: white;
+    background: url(../style/이미지/001-removebg-preview.png);
+    background-size:contain;
+    border: 0;
+    height: 30px;
+    width: 30px;
 }
+#search{
+    background-color: white;
+    background: url(../style/이미지/002-removebg-preview.png);
+    background-size:contain;
+    border: 0;
+    height: 30px;
+    width: 30px;
+}
+#basket{
+    background-color: white;
+    background: url(../style/이미지/003-removebg-preview.png);
+    background-size:contain;
+    border: 0;
+    height: 30px;
+    width: 30px;
+} */
+
+/* -- 속성은 차이가 별로 없는데 input을 사용했을 때와의 차이?? */
+
+/* .main{
+    background: url(../style/이미지/그림01.jpg)no-repeat ;
+    background-size: contain;
+    height: 600px;
+    width: 100%;
+} */
