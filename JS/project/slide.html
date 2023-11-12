@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="radio">  -->
+    <!-- input태그  button, submit 같은 경우 value로 버튼명 지정
+               radio 경우 label을 이용하여 버튼명 지정
+            checkbox와 유사하게 생김. 하지만 단일 선택만 가능하다. 
+            name 속성을 지정해 주지 않으면 중복 선택이 가능해 지기 떄문에 
+            name 속성을 사용하여 그룹을 지정해줄 필요가 있다.  -->
+<!-- //예제// -->
+<input type="radio" name="gender" id="woman">
+<label for="woman">여자</label>
+<input type="radio" name="gender" id="man">
+<label for="man">남성</label>
+
+<!-- //name 속성을 적용하지 않았을 때// -->
+<input type="radio" id="woman">
+<label for="woman">여성</label>
+<input type="radio" id="man">
+<label for="man">남성</label>        
