@@ -1,0 +1,50 @@
+.section{
+    display: none;
+}
+/* 선택 부분을 화면에서 가리는 효과 적용 */
+
+.slideimg{
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;  /*영역을 벗어나는 부분을 가린다 */
+    white-space: nowrap;
+}
+
+.slidelist{
+    /* white-space: nowrap; */
+    font-size: 0;
+}
+
+.section.slidelist>li {
+    /* white-space: nowrap; */
+    display:inline-block;
+    width: 100%;
+    vertical-align: middle;
+    transition:all 5s;
+}
+
+.section.slidelist>li>a {
+    /* display: block;  ??? 왜 */
+    position: relative;
+}
+
+.section.slidelist>li>aimg {
+    width: 100%; 
+}
+
+.section.slidelist .label {
+    position: absolute;
+    top:50%;
+    padding: 30px;
+}
+
+.section.slidelist .left {
+    background: url(../style/이미지/왼쪽\ 화살표.png);
+    left: 30px;
+}
+
+.section.slidelist .right{
+    background: url(../style/이미지/오른쪽\ 화살표.png);
+    right: 30px;
+}
+

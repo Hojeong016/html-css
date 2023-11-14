@@ -1,0 +1,91 @@
+body{
+    height: 2000pc;
+}
+/* <div id:first>
+    기본값, 공백을 여러개 넣어도 공백 1개만 표시합니다. 
+    글이 길어지면 텍스트가 자동 줄바꿈 됩니다.
+</div> */
+.first{
+    white-space:normal;
+    background-color: yellow;
+    width: 400px;
+    height: 50px;
+}
+/* <div id:second>
+    공백을 여러개 넣어도 1개만 표시합니다, 텍스트가 길어도 줄바꿈이 되지 않고 
+    같은 줄에 계속 표시합니다.
+</div> */
+.second{
+    background-color: yellow;
+    width: 400px; 
+    white-space:nowrap;
+    height: 50px;
+    position: relative;
+    top:20px;
+}
+/* <div id:third>
+    공백을 코드에 있는 그대로 표시합니다. 
+    < pre> 태그처럼 행동합니다. 
+    코드에 줄바꿈이 없다면 줄바꿈이 되지 않습니다.
+</div> */
+.third{
+    background-color: yellow;
+    width: 400px;
+    white-space:pre;
+    height: 80px;
+    position: relative;
+    top: 40px;;
+}
+/* <div id:fourth>
+    공백을 코드에 있는 그대로 표시합니다. 코드에 줄바꿈이 없어도 자동줄바꿈이 됩니다.
+</div> */
+.fourth{
+    background-color: yellow;
+    width: 400px;
+    white-space:pre-wrap;
+    height: 80px;
+    position: relative;
+    top: 60px;;
+}
+/* <div id:fifth>
+    공백을 여러개 넣어도 1개만 표시합니다.코드에 줄바꿈이 없어도 자동 줄바꿈이 됩니다.
+</div> */
+.fifth{
+    background-color: yellow;
+    width: 400px;
+    white-space:pre-line;
+    height: 80px;
+    position: relative;
+    top: 80px;;
+}
+
+/* .ul{
+    display: inline;
+    white-space:nowrap;
+} */
+
+/* <ul>
+    <li class="one">
+        <img src="https://images.unsplash.com/photo-1503424886307-b090341d25d1?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D"
+        height="100px" width="300px">
+    </li>
+    <li class="two">
+        <img src="https://images.unsplash.com/photo-1503614472-8c93d56e92ce?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D"   height="100px" width="300px">
+    </li>
+    <li class="three">
+        <img src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8fA%3D%3D"   height="100px" width="300px">
+    </li>
+/* </ul> */ 
+.one{ 
+    white-space:nowrap;
+    display: inline-block;
+}
+.two{
+    white-space:nowrap;
+    display: inline-block;
+}
+
+.three{
+    white-space:nowrap;
+    display: inline-block;
+}
